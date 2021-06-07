@@ -9,6 +9,10 @@ Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN�
 软件架构说明
 
 规划如下：
+
+```
+
+
 qiwenshare ---父pom
     |--qiwen-file 奇文网盘
     |--qiwen-stock 奇文股票
@@ -17,6 +21,7 @@ qiwenshare ---父pom
     |--qiwen-album 奇文相册
 
 
+```
 #### 安装教程
 
 1.  xxxx
