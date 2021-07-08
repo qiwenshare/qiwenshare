@@ -12,7 +12,14 @@
 
     <groupId>com.qiwenshare</groupId>
     <artifactId>qiwenshare</artifactId>
-    <version>1.0.3</version>
+    <!--修改此版本号，记得修改下面的引入-->
+    <!--修改此版本号，记得修改下面的引入-->
+    <!--修改此版本号，记得修改下面的引入-->
+    <!--修改此版本号，记得修改下面的引入-->
+    <version>1.0.4</version>
+    <!--修改此版本号，记得修改下面的引入-->
+    <!--修改此版本号，记得修改下面的引入-->
+    <!--修改此版本号，记得修改下面的引入-->
     <!--修改此版本号，记得修改下面的引入-->
     <packaging>pom</packaging>
 
@@ -22,8 +29,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
 
-        <qiwenshare-common.version>1.0.3</qiwenshare-common.version>
-        <ufo.version>1.0.3</ufo.version>
+        <qiwenshare-common.version>1.0.4</qiwenshare-common.version>
+        <ufo.version>1.0.4</ufo.version>
 
         <aliyun.sdk.oss.version>3.10.2</aliyun.sdk.oss.version>
         <fastdfs-client.version>1.26.2</fastdfs-client.version>
