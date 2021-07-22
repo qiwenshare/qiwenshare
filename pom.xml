@@ -16,7 +16,7 @@
     <!--修改此版本号，记得修改下面的引入-->
     <!--修改此版本号，记得修改下面的引入-->
     <!--修改此版本号，记得修改下面的引入-->
-    <version>1.0.4</version>
+    <version>1.0.5</version>
     <!--修改此版本号，记得修改下面的引入-->
     <!--修改此版本号，记得修改下面的引入-->
     <!--修改此版本号，记得修改下面的引入-->
@@ -29,8 +29,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
 
-        <qiwenshare-common.version>1.0.4</qiwenshare-common.version>
-        <ufo.version>1.0.4</ufo.version>
+        <qiwenshare-common.version>1.0.5</qiwenshare-common.version>
+        <ufop.version>1.0.5</ufop.version>
 
         <aliyun.sdk.oss.version>3.10.2</aliyun.sdk.oss.version>
         <fastdfs-client.version>1.26.2</fastdfs-client.version>
@@ -76,8 +76,8 @@
             </dependency>
             <dependency>
                 <groupId>com.qiwenshare</groupId>
-                <artifactId>ufo-spring-boot-starter</artifactId>
-                <version>${ufo.version}</version>
+                <artifactId>ufop-spring-boot-starter</artifactId>
+                <version>${ufop.version}</version>
             </dependency>
             <dependency>
                 <groupId>commons-fileupload</groupId>
