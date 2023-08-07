@@ -13,11 +13,11 @@
 
     <groupId>com.qiwenshare</groupId>
     <artifactId>qiwenshare</artifactId>
-    <version>1.2.7</version>
+    <version>1.2.8</version>
     <packaging>pom</packaging>
 
     <properties>
-        <qiwenshare.version>1.2.7</qiwenshare.version>
+        <qiwenshare.version>1.2.8</qiwenshare.version>
         <java.version>1.8</java.version>
         <spring-cloud.version>Hoxton.SR9</spring-cloud.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
