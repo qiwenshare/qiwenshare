@@ -13,11 +13,11 @@
 
     <groupId>com.qiwenshare</groupId>
     <artifactId>qiwenshare</artifactId>
-    <version>1.2.8</version>
+    <version>1.2.9</version>
     <packaging>pom</packaging>
 
     <properties>
-        <qiwenshare.version>1.2.8</qiwenshare.version>
+        <qiwenshare.version>1.2.9</qiwenshare.version>
         <java.version>1.8</java.version>
         <spring-cloud.version>Hoxton.SR9</spring-cloud.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -38,8 +38,8 @@
         <poi-version>5.2.2</poi-version>
         <xdocreport-version>2.0.2</xdocreport-version>
         <pdf-box-version>3.0.0-RC1</pdf-box-version>
-        <javacpp.version>1.5.7</javacpp.version>
-        <javacv.version>1.5.7</javacv.version>
+        <javacpp.version>1.5.9</javacpp.version>
+        <javacv.version>1.5.9</javacv.version>
         <ffmpeg.version>5.0-1.5.7</ffmpeg.version>
         <minio.version>8.3.4</minio.version>
         <qiniu.version>7.9.2</qiniu.version>
