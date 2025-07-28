@@ -18,7 +18,7 @@
 
     <properties>
         <qiwenshare.version>1.4.1</qiwenshare.version>
-<!--        <java.version>1.8</java.version>-->
+        <java.version>1.8</java.version>
         <spring-cloud.version>Hoxton.SR9</spring-cloud.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
@@ -26,34 +26,26 @@
         <qiwenshare-common.version>${qiwenshare.version}</qiwenshare-common.version>
         <ufop.version>${qiwenshare.version}</ufop.version>
 
-        <aliyun.sdk.oss.version>3.17.2</aliyun.sdk.oss.version>
-        <fastdfs-client.version>1.27.2</fastdfs-client.version>
+        <aliyun.sdk.oss.version>3.18.3</aliyun.sdk.oss.version>
+        <tencent.sdk.cos.version>5.6.247</tencent.sdk.cos.version>
         <commons-fileupload.version>1.5</commons-fileupload.version>
         <commons-io.version>2.15.0</commons-io.version>
-        <jjwt.version>0.9.1</jjwt.version>
-        <prime-jwt.version>2.0.0</prime-jwt.version>
-        <thumbnailator.version>0.4.20</thumbnailator.version>
         <fastjson2.version>2.0.41</fastjson2.version>
         <swagger-annotations.version>2.2.18</swagger-annotations.version>
         <mybatis-plus.version>3.5.4</mybatis-plus.version>
-        <poi-version>5.2.4</poi-version>
-        <xdocreport-version>2.0.2</xdocreport-version>
-        <pdf-box-version>3.0.0</pdf-box-version>
-        <imaging.version>1.0-alpha3</imaging.version>
-        <javacpp.version>1.5.9</javacpp.version>
+        <poi-version>5.4.1</poi-version>
+        <pdf-box-version>3.0.5</pdf-box-version>
+        <imaging.version>1.0.0-alpha6</imaging.version>
         <javacv.version>1.5.9</javacv.version>
-        <ffmpeg.version>6.0-1.5.9</ffmpeg.version>
-        <minio.version>8.5.6</minio.version>
+        <minio.version>8.5.17</minio.version>
         <qiniu.version>7.17.0</qiniu.version>
         <hutool.version>5.8.22</hutool.version>
         <springdoc-openapi.version>1.7.0</springdoc-openapi.version>
         <okhttp.version>5.0.0-alpha.3</okhttp.version>
-        <sevenzipjbinding.version>16.02-2.01</sevenzipjbinding.version>
         <jpinyin.version>1.1.8</jpinyin.version>
         <jaudiotagger.version>2.0.3</jaudiotagger.version>
         <htmlunit.version>2.70.0</htmlunit.version>
         <oshi-core.version>6.4.7</oshi-core.version>
-        <elasticsearch.version>8.10.4</elasticsearch.version>
     </properties>
 
     <dependencyManagement>
@@ -103,40 +95,7 @@
                 <artifactId>fastjson2</artifactId>
                 <version>${fastjson2.version}</version>
             </dependency>
-            <!-- 解压缩-->
-            <dependency>
-                <groupId>net.sf.sevenzipjbinding</groupId>
-                <artifactId>sevenzipjbinding</artifactId>
-                <version>${sevenzipjbinding.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>net.sf.sevenzipjbinding</groupId>
-                <artifactId>sevenzipjbinding-all-platforms</artifactId>
-                <version>${sevenzipjbinding.version}</version>
-            </dependency>
 
-            <!--图片压缩-->
-            <dependency>
-                <groupId>net.coobird</groupId>
-                <artifactId>thumbnailator</artifactId>
-                <version>${thumbnailator.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>io.jsonwebtoken</groupId>
-                <artifactId>jjwt</artifactId>
-                <version>${jjwt.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.inversoft</groupId>
-                <artifactId>prime-jwt</artifactId>
-                <version>${prime-jwt.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.tobato</groupId>
-                <artifactId>fastdfs-client</artifactId>
-                <version>${fastdfs-client.version}</version>
-            </dependency>
             <dependency>
                 <groupId>com.aliyun.oss</groupId>
                 <artifactId>aliyun-sdk-oss</artifactId>
@@ -145,20 +104,18 @@
             <dependency>
                 <groupId>com.qcloud</groupId>
                 <artifactId>cos_api</artifactId>
-                <version>5.6.227</version>
+                <version>${tencent.sdk.cos.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.poi</groupId>
-                <artifactId>poi</artifactId>
+                <artifactId>poi-ooxml-full</artifactId>
                 <version>${poi-version}</version>
             </dependency>
-
             <dependency>
                 <groupId>org.apache.poi</groupId>
                 <artifactId>poi-ooxml</artifactId>
-                <version>${poi-version}</version>
+                <version>${poi-version}</version> <!-- 建议使用最新版本 -->
             </dependency>
-
             <dependency>
                 <groupId>org.apache.poi</groupId>
                 <artifactId>poi-scratchpad</artifactId>
@@ -178,23 +135,8 @@
 
             <dependency>
                 <groupId>org.bytedeco</groupId>
-                <artifactId>javacpp</artifactId>
-                <version>${javacpp.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.bytedeco</groupId>
-                <artifactId>javacv</artifactId>
-                <version>${javacv.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.bytedeco</groupId>
                 <artifactId>javacv-platform</artifactId>
                 <version>${javacv.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.bytedeco</groupId>
-                <artifactId>ffmpeg-platform</artifactId>
-                <version>${ffmpeg.version}</version>
             </dependency>
 
             <dependency>
@@ -244,11 +186,6 @@
                 <groupId>com.github.oshi</groupId>
                 <artifactId>oshi-core</artifactId>
                 <version>${oshi-core.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>co.elastic.clients</groupId>
-                <artifactId>elasticsearch-java</artifactId>
-                <version>${elasticsearch.version}</version>
             </dependency>
             <dependency>
                 <groupId>jakarta.json</groupId>
