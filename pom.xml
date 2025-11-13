@@ -15,7 +15,7 @@
     <artifactId>qiwenshare</artifactId>
     <version>1.4.1</version>
     <packaging>pom</packaging>
-
+    <name>qiwenshare</name>
     <properties>
         <qiwenshare.version>1.4.1</qiwenshare.version>
         <java.version>1.8</java.version>
@@ -319,22 +319,32 @@
                             </execution>
                         </executions>
                     </plugin>
+                    <!-- 中央仓库发布插件 -->
+                    <plugin>
+                        <groupId>org.sonatype.central</groupId>
+                        <artifactId>central-publishing-maven-plugin</artifactId>
+                        <version>0.8.0</version>
+                        <extensions>true</extensions>
+                        <configuration>
+                            <publishingServerId>central</publishingServerId>
+                        </configuration>
+                    </plugin>
                 </plugins>
             </build>
-            <distributionManagement>
-                <snapshotRepository>
-                    <id>sonatype</id>
-                    <url>
-                        https://oss.sonatype.org/content/repositories/snapshots/
-                    </url>
-                </snapshotRepository>
-                <repository>
-                    <id>sonatype</id>
-                    <url>
-                        https://oss.sonatype.org/service/local/staging/deploy/maven2/
-                    </url>
-                </repository>
-            </distributionManagement>
+<!--            <distributionManagement>-->
+<!--                <snapshotRepository>-->
+<!--                    <id>sonatype</id>-->
+<!--                    <url>-->
+<!--                        https://oss.sonatype.org/content/repositories/snapshots/-->
+<!--                    </url>-->
+<!--                </snapshotRepository>-->
+<!--                <repository>-->
+<!--                    <id>sonatype</id>-->
+<!--                    <url>-->
+<!--                        https://oss.sonatype.org/service/local/staging/deploy/maven2/-->
+<!--                    </url>-->
+<!--                </repository>-->
+<!--            </distributionManagement>-->
         </profile>
     </profiles>
 
